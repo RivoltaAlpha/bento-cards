@@ -62,6 +62,9 @@ body{
   font-weight: lighter;
   color: hsl(0, 85%, 5%);
 }
+.item2 text{
+  color:hsl(256, 67%, 59%);
+}
   
   .item2 {
     grid-area: item2;
@@ -83,6 +86,9 @@ body{
 }
 .item2 img{
   background:hsl(256, 67%, 59%);
+}
+.item2 text{
+  color:hsl(39, 100%, 71%);
 }
   
   .item3 {
