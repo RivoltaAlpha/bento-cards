@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+  }
+body{
+    margin: 0 50px 0 50px;
+    padding: 100px;
+    font-family: 'Poppins', sans-serif;
+    background-color: hsl(0, 0%, 100%);
+}
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: hsl(0, 0%, 100%);
+    height: auto;
+  }
+  
+.templates {
+    display: grid;
+    grid-template-columns: 400px 400px 400px 400px; 
+    grid-template-rows: 400px 400px 400px 400px; 
+    grid-template-areas: 
+      "item1 item2 item2 item3"
+      "item1 item2 item2 item3"
+      "item4 item5 item6 item3"
+      "item4 item7 item8 item8";
+    gap: 2em;
+    padding: 20px;
+    height: auto;
+  }
+  .card {
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: hsl(256, 67%, 59%);
+  }  
+  
+  .item1 {
+    grid-area: item1;
+    background-color: hsl(31, 66%, 93%);
+    overflow: hidden;
+  }
+  .item1 h2 {
+    font-size: 4rem;
+    font-weight: bold;
+    color: hsl(0, 0%, 1%);
+}
+.item1 img{
+  background:hsl(31, 66%, 93%);
+}
+.item1 h1 {
+  font-size: 4rem;
+  font-weight: lighter;
+  color: hsl(0, 85%, 5%);
+}
+  
+  .item2 {
+    grid-area: item2;
+    background-color: hsl(256, 67%, 59%);
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px;
+  }
+  .item2 h1 {
+    font-size: 6rem;
+    font-weight: lighter;
+    color: hsl(0, 31%, 95%);
+}
+.item2 p{
+  font-size: 1.5rem;
+}
+.item2 img{
+  background:hsl(256, 67%, 59%);
+}
+  
+  .item3 {
+    grid-area: item3;
+    background-color: hsl(254, 88%, 90%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    justify-items: center;
+    gap: 20px;
+    color: hsl(260, 100%, 2%);
+    overflow: hidden;
+  }
+  .item3 h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: hsl(260, 100%, 1%);
+  }
+  .item3 img {
+    width: 90%;
+    height: 40%;
+    border-radius: 10px;
+    margin-left: 50%;
+
+  }
+    .item3 p {
+        font-size: 1.5rem;
+        color: hsl(260, 100%, 2%);
+    }
+  
+  .item4 {
+    grid-area: item4;
+    background-color: hsl(39, 100%, 71%);
+    justify-content: space-around;
+  }
+  .item4 img {
+    width: 90%;
+    height: 50%;
+    border-radius: 10px;
+  }
+  .item4 h2 {
+    font-size: 4rem;
+    font-weight: bold;
+    color: hsl(0, 0%, 1%);
+}
+  .item5 {
+    grid-area: item5;
+    background-color: hsl(0, 0%, 95%);
+    overflow: hidden;
+  }
+  .item5 img {
+    width: 90%;
+    height: 50%;
+    border-radius: 10px;
+    margin-left: 50%;
+  }
+    .item5 h2 {
+        font-size: 3rem;
+        font-weight: bold;
+        color: hsl(0, 0%, 1%);
+    }
+  
+  .item6 {
+    grid-area: item6;
+    background-color: hsl(39, 100%, 71%);
+    overflow: hidden;
+    padding:10px
+  }
+  .item6 h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: hsl(258, 89%, 4%);
+    margin-bottom: 10px;
+  }
+  .item6 img {
+    width: 90%;
+    height: 50%;
+    margin-top: 10%;
+    border-radius: 10px;
+  }
+  
+  .item7 {
+    grid-area: item7;
+    background-color: hsl(0, 0%, 95%);
+    color: hsl(0, 100%, 1%);
+    overflow: hidden;
+    justify-content: space-evenly;
+  }
+    .item7 h2 {
+        font-size: 7rem;
+        font-weight: bold;
+        color: hsl(0, 0%, 1%);
+    }
+    .item7 p {
+        font-size: 1.5rem;
+        color: hsl(0, 0%, 1%);
+    }
+    .item7 img {
+        width: 80%;
+        height: 30%;
+        border-radius: 10px;
+    }
+  
+  .item8 {
+    grid-area: item8;
+    background-color: hsl(256, 44%, 57%);
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+  } 
+  .item8 img {
+    width: 80%;
+    height: 90%;
+    border-radius: 10px;
+  }
+.item8 h2{
+    font-size: 3.2 rem;
+    color: hsl(240, 100%, 100%);
+}
+.create{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: hsl(254, 88%, 90%);
+    gap: 20px;
+}
+.create h1{
+    font-size: 2rem;
+    color: hsl(256, 67%, 59%);
+}
+.social-media{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.social-media h1{
+    font-size: 5rem;
+    color: hsl(256, 67%, 59%);
+}
+@media (max-width: 768px) {
+    .templates {
+      grid-template-columns: 1fr;
+    }
+  }
+  
