@@ -62,9 +62,11 @@ body{
   font-weight: lighter;
   color: hsl(0, 85%, 5%);
 }
-.item2 p:nth-child(5){
+
+.highlight{
   color:hsl(256, 67%, 59%);
 }
+
   
   .item2 {
     grid-area: item2;
@@ -86,8 +88,9 @@ body{
 }
 .item2 img{
   background:hsl(256, 67%, 59%);
+  width: 90%;
 }
-.item2 p:nth-child(3){
+.ten{
   color:hsl(39, 100%, 71%);
 }
   
@@ -238,9 +241,46 @@ body{
     font-size: 5rem;
     color: hsl(256, 67%, 59%);
 }
-@media (max-width: 768px) {
-    .templates {
-      grid-template-columns: 1fr;
-    }
+@media (max-width: 425px) {
+  body{
+    padding: 10px;
+    margin: 20px;
   }
+    .templates {
+      grid-template-columns: 500px;
+      margin: auto;
+      grid-template-rows: 500px;
+      grid-template-areas: 
+      "item1"
+      "item2"
+      "item3"
+      "item4"
+      "item5"
+      "item6"
+      "item7"
+      "item8";
+      gap: 20px;
+    }
+
+  }
+@media (max-width: 768px) {
+  body{
+    padding: 10px;
+    margin: 20px;
+  }
+    .templates {
+      margin: auto;
+      grid-template-columns: 500px;
+      grid-template-rows: 500px;
+      grid-template-areas: 
+      "item1 item2"
+      "item3 item4"
+      "item5 item6"
+      "item7 item8";
+      gap: 20px;
+    }
+
+  }
+
+  
   
